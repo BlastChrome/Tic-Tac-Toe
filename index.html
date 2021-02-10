@@ -13,7 +13,7 @@
         <h1 class="title">Tic-Tac-Toe</h1>  
 
         <!-- The initial screen(choose between vs player or vs CPU) -->
-        <div class="game-setup">
+        <div class="game-setup hidden">
             <div class="mode-select-wrapper">
                 <div class="mode-card">
                     <img src="/icons/Player-1-icon.png" alt="Player-1-icon">
@@ -30,15 +30,26 @@
         </div>  
 
         <!-- The entire game Screen -->
-        <div class="game-container hidden">
+        <div class="game-container">
 
             <div class="play-area">
                 <!-- The player avatar + score -->
-                <div class="score-card-wrapper">
-                    <img src="/icons/Player-1-icon.png" alt="Player-1-icon"> 
+                <div class="score-card-wrapper-1">
+                    <div class="img-container">
+                        <img src="/icons/Player-1-icon.png" alt="Player-1-icon"> 
+                        <p>Player</p>
+                    </div>
                     <div class="win-loss-wrapper">
-                        <img src="/icons/winflag.png" alt="win"> 
-                        <img src="/icons/lossskull.png" alt="loss">
+                        <div class="wins">
+                            <img src="/icons/winflag.png" alt="win"> 
+                            <img src="/icons/winflag.png" alt="win"> 
+                            <img src="/icons/winflag.png" alt="win"> 
+                        </div>
+                        <div class="losses">
+                            <img src="/icons/lossskull.png" alt="loss">
+                            <img src="/icons/lossskull.png" alt="loss">
+                            <img src="/icons/lossskull.png" alt="loss">
+                        </div>
                     </div>
                 </div> 
 
@@ -48,21 +59,32 @@
                 </div>
 
                 <!-- The opponent avatar + score -->
-                <div class="score-card-wrapper">
-                    <img src="/icons/computer-icon.png" alt="computer-icon"> 
+                <div class="score-card-wrapper-2">
+                    <div class="img-container">
+                        <img src="/icons/Player-2-icon.png" alt="computer-icon"> 
+                        <p>Player</p>
+                    </div>
                     <div class="win-loss-wrapper">
-                        <img src="/icons/winflag.png" alt="win"> 
-                        <img src="/icons/lossskull.png" alt="loss">
+                        <div class="wins">
+                            <img src="/icons/winflag.png" alt="win"> 
+                            <img src="/icons/winflag.png" alt="win"> 
+                            <img src="/icons/winflag.png" alt="win"> 
+                        </div>
+                        <div class="losses">
+                            <img src="/icons/lossskull.png" alt="loss">
+                            <img src="/icons/lossskull.png" alt="loss">
+                            <img src="/icons/lossskull.png" alt="loss">
+                        </div>
                     </div>
                 </div> 
 
             </div> 
-
             <!-- The game stae controller -->
             <div class="game-state-wrapper">
-                <button class="btn rest-btn">Reset</button> 
-                <button class="btn resart-btn">Restart</button>
+                <button class="btn reset-btn">Reset</button> 
+                <button class="btn restart-btn">Restart</button>
             </div> 
+
 
         </div>        
     </div>
