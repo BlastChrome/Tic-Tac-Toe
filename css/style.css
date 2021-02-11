@@ -76,9 +76,7 @@ p {
 }
 
 .game-container {
-  /* min-width: 90%;s */
   max-width: 320px;
-  /* background: red;s */
 }
 
 .play-area {
@@ -152,24 +150,6 @@ p {
     font-size: 40px;
     margin-bottom: 70px;
   }
-  .mode-card {
-    width: 354px;
-    height: 165px;
-  }
-
-  .play-btn {
-    font-size: 25px;
-  }
-  .score-card-wrapper-1,
-  .score-card-wrapper-2 {
-    width: 395px;
-    height: 120px;
-  }
-  .game-board {
-    height: 428px;
-    width: 428px;
-    grid-template-columns: repeat(3, 142px);
-  }
 }
 
 @media screen and (min-width: 1080px) {
@@ -191,10 +171,24 @@ p {
     align-items: center;
     justify-content: space-between;
   }
+  .play-area {
+    position: relative;
+  }
   .play-btn {
     position: absolute;
     width: 177px;
     top: 110%;
     left: 40%;
+  }
+  .score-card-wrapper-1,
+  .score-card-wrapper-2 {
+    position: absolute;
+    top: 0;
+  }
+  .score-card-wrapper-1 {
+    right: 105%;
+  }
+  .score-card-wrapper-2 {
+    right: -92%;
   }
 }
