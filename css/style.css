@@ -143,6 +143,15 @@ p {
   margin: 2px;
   width: auto;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.cell img {
+  position: absolute;
+  height: auto;
+  width: 3.5rem;
 }
 
 @media screen and (min-width: 768px) {
